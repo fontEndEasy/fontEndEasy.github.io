@@ -1,2 +1,9 @@
 *{ box-sizing: border-box; font-family: microsoft yehei; font-size: 16px; padding: 0; margin: 0; }
 body{ min-width: 320px; max-width: 1200px; margin: 0 auto; padding: 0 40px }
+.easyui-container{ margin: 0 auto; min-height: 200px; }
+.easyui-header,
+.easyui-content,
+.easyui-footer{ margin-bottom: 10px; border-radius: 5px;  background-color: #DEDEDE; box-shadow: 0 1px 6px #DEDEDE; }
+.easyui-header{ margin-top: 10px; height: 45px;  margin-bottom: 10px; }
+.easyui-content{ min-height: 600px; margin-bottom: 10px; }
+.easyui-footer{ min-height: 100px; }
