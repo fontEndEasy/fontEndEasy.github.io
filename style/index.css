@@ -1,1 +1,4 @@
 .easyui-header{ height: 126px; background-color: #1791BD; }
+.easyui-navwrap{width: 1200px;height: 126px;margin: 0 auto;display: -webkit-flex;display: flex; }
+.easyui-nav{ height: 48px; align-self: flex-start; }
+.easyui-navbar{ height: 48px; align-self: flex-end; }
