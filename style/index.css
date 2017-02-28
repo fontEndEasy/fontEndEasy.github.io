@@ -3,4 +3,6 @@
 .easyui-nav{ height: 48px; align-self: flex-start; }
 .easyui-navbar{ height: 48px; align-self: flex-end; }
 .easyui-content{ width: 1200px; margin: 0 auto; margin-top: 20px; }
-.easyui-content .easyui-ul{display: -webkit-flex;display: flex;flex-direction: row;flex-wrap: wrap;flex-grow: 1;flex-shrink: 1;}
+.easyui-content .easyui-ul{display: -webkit-flex;display: flex;flex-direction: row;flex-wrap: wrap;flex-grow: 1;flex-shrink: 1;justify-content: space-between;perspective: 1200;}
+.easyui-content .easyui-ul > li{/* flex: 1; */width: 24%;align-items: flex-start;height: 426px;border: 1px solid #dedede;flex-grow: 1;flex-shrink: 1;margin: 6px 6px;-webkit-box-shadow: 0 1px 15px #DEDEDE;box-shadow: 0 1px 15px #DEDEDE;-webkit-border-radius: 8px;border-radius: 8px;border: 1px solid #DEDEDE;background-color: #FFF;}
+.easyui-content .easyui-ul > li:hover{border: 2px solid #15a7dc;transform: scale(1.05);-webkit-transform: scale(1.05);box-shadow: 0 1px 15px #c0edfd;}

@@ -39,6 +39,31 @@ export default StyleSheet.create({
         "flexDirection": "row",
         "flexWrap": "wrap",
         "flexGrow": 1,
-        "flexShrink": 1
+        "flexShrink": 1,
+        "justifyContent": "space-between",
+        "perspective": 1200
+    },
+    "easyui-content easyui-ul > li": {
+        "width": "24%",
+        "alignItems": "flex-start",
+        "height": 426,
+        "border": "1px solid #DEDEDE",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "marginTop": 6,
+        "marginRight": 6,
+        "marginBottom": 6,
+        "marginLeft": 6,
+        "WebkitBoxShadow": "0 1px 15px #DEDEDE",
+        "boxShadow": "0 1px 15px #DEDEDE",
+        "WebkitBorderRadius": 8,
+        "borderRadius": 8,
+        "backgroundColor": "#FFF"
+    },
+    "easyui-content easyui-ul > li:hover": {
+        "border": "2px solid #15a7dc",
+        "transform": "scale(1.05)",
+        "WebkitTransform": "scale(1.05)",
+        "boxShadow": "0 1px 15px #c0edfd"
     }
 });
