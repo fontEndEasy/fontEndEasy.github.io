@@ -26,5 +26,9 @@ export default StyleSheet.create({
     "easyui-navbar": {
         "height": 48,
         "alignSelf": "flex-end"
+    },
+    "easyui-content easyui-ul": {
+        "display": "flex",
+        "flexDirection": "row"
     }
 });
