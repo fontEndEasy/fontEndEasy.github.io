@@ -3,12 +3,22 @@
   <head>
     <title>Home page!</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="style/global.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="stylesheet" href="style/global.css" media="screen and (min-width: 1200px)" />
   </head>
   <body>
     <div class="easyui-container container">
-      <div class="easyui-header header"></div>
+      <div class="easyui-header header">
+        <div class="easyui-navwrap">
+          <div class="easui-nav nav"></div>
+          <div class="easyui-navbar navbar"></div>
+        </div>
+      </div>
       <div class="easyui-content content"></div>
       <div class="easyui-footer footer"></div>
     </div>
