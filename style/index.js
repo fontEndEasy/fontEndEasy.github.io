@@ -27,8 +27,18 @@ export default StyleSheet.create({
         "height": 48,
         "alignSelf": "flex-end"
     },
+    "easyui-content": {
+        "width": 1200,
+        "marginTop": 20,
+        "marginRight": "auto",
+        "marginBottom": 0,
+        "marginLeft": "auto"
+    },
     "easyui-content easyui-ul": {
         "display": "flex",
-        "flexDirection": "row"
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "flexGrow": 1,
+        "flexShrink": 1
     }
 });

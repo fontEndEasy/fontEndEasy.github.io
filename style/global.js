@@ -17,9 +17,17 @@ export default StyleSheet.create({
         "marginTop": 0,
         "marginRight": 0,
         "marginBottom": 0,
-        "marginLeft": 0
+        "marginLeft": 0,
+        "WebkitTransition": "all .3s ease-in-out",
+        "transition": "all .3s ease-in-out"
     },
     "body": {
         "backgroundColor": "#F5F5F5"
+    },
+    "ul": {
+        "listStyle": "none"
+    },
+    "a": {
+        "textDecoration": "none"
     }
 });
