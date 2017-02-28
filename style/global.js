@@ -18,5 +18,8 @@ export default StyleSheet.create({
         "marginRight": 0,
         "marginBottom": 0,
         "marginLeft": 0
+    },
+    "body": {
+        "backgroundColor": "#F5F5F5"
     }
 });
