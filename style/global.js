@@ -18,9 +18,5 @@ export default StyleSheet.create({
         "marginRight": 0,
         "marginBottom": 0,
         "marginLeft": 0
-    },
-    "easyui-header": {
-        "height": 126,
-        "backgroundColor": "#1791BD"
     }
 });
