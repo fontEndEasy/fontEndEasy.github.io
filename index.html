@@ -17,23 +17,66 @@
     <div class="easyui-container container">
       <div class="easyui-header header">
         <div class="easyui-navwrap">
-          <div class="easyui-nav nav"></div>
-          <div class="easyui-navbar navbar"></div>
+          <div class="easyui-nav nav">
+            <div class="img-head"></div>
+          </div>
+          <div class="easyui-navbar navbar">
+            <div class="instroduction">
+              <p class="name"><label><i class="icon-name"></i>朱小龙&nbsp;<strong>Xiaolong.zhu</strong></label></p>
+              <p class="gender"><label><i class="icon-gender"></i>男&nbsp;<strong>Male</strong></label></p>
+              <p class="height"><label><i class="icon-height"></i>165<strong>Cm</strong></label></p>
+              <p class="telphone"><label><i class="icon-telphone"></i>13430512734<strong>Tel</strong></label></p>
+              <p class="qq"><label><i class="icon-qq"></i>709527375<strong>QQ</strong></label></p>
+              <p class="weixin"><label><i class="icon-weixin"></i>easyui-case<strong>Weixin</strong></label></p>
+              <p class="email"><label><i class="icon-email"></i>709527375@qq.com<strong>Email</strong></label></p>
+              <p class="education" title="Jiangxi college of finance and economics specialty(2008-2011)"><label><i class="icon-education"></i>江西财经专修学院(2008-2011)&nbsp;<strong>Jiangxi college of finance and economics specialty(2008-2011)</strong></label></p>
+              <p class="major" title="Computer science and application"><label><i class="icon-major"></i>计算机科学与应用&nbsp;<strong>Computer science and application</strong></label></p>
+              <p class="address" title="Shenzhen longgang sakata street gansu road no. 52"><label><i class="icon-address"></i>深圳龙岗坂田街道永甘路52号&nbsp;<strong>Shenzhen longgang sakata street gansu road no. 52</strong></label></p>
+            </div>
+            <div class="skill" id="skill">
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="easyui-content content">
-        <ul class="easyui-ul ul">
-          <li class="easyui-list list1"></li>
-          <li class="easyui-list list2"></li>
-          <li class="easyui-list list3"></li>
-          <li class="easyui-list list4"></li>
-          <li class="easyui-list list5"></li>
-          <li class="easyui-list list6"></li>
-          <li class="easyui-list list7"></li>
-          <li class="easyui-list list8"></li>
-        </ul>
+
       </div>
       <div class="easyui-footer footer"></div>
     </div>
+    <script src="javascripts/jquery/jquery.js"></script>
+    <script src="javascripts/handlebars/handlebars.js"></script>
+    <script src="javascripts/commonApi.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="skill-list">
+        {{#each skill}}
+          <div>{{name}}</div>
+        {{/each}}
+        <div class="skill-container">
+        {{#with currentLearn}}
+            {{#each learnskill}}
+              <div class="skill-name">{{ name }}</div>
+              <div class="skill-content">{{ content }}</div>
+            {{/each}}
+            {{#each jobdirection}}
+              <div class="skill-name">{{ name }}</div>
+              <div class="skill-content">{{ content }}</div>
+            {{/each}}
+        {{/with}}
+        </div>
+      </div>
+    </script>
+    <script id="easyui-ul" type="text/x-handlebars-template">
+      <ul class="easyui-ul ul">
+        {{#each projectArr}}
+        <li class="easyui-list list{{@index}}">
+          <div class="projectName">{{ name }}</div>
+          <div class="projectTitle">{{ title }}</div>
+          <div class="projectTime">{{ time }}</div>
+        </li>
+        {{/each}}
+      </ul>
+    </script>
   </body>
 </html>
