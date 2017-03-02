@@ -53,32 +53,14 @@
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.easyui-navbar .skill:before{
-    display: block;
-    content: '-----------------------------------------------';
-    position: absolute;
-    right: -18px;
-    top: 18px;
-    writing-mode: vertical-lr;
-    letter-spacing: 6px;
-    color: #FFF;
-    -webkit-writing-mode: vertical-lr;
-    height: 99%;
-    /* border: 1px dashed #fff; */
-    -moz-writing-mode: vertical-lr;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    font-weight: bold;
-}
-.easyui-navbar .skill:hover:before{
+/*.easyui-navbar .skill:hover:before{
     transform: translateX(20px) scaleY(0);
 }
 .easyui-navbar .skill:hover:after{
     transform: rotate(360deg) translate(38px, -72px);
     right: 98%;
     transform-origin: center center;
-}
+}*/
 .easyui-navbar .skill-animate{
     -webkit-animation-name: bounce;
     animation-name: bounce;
@@ -87,7 +69,7 @@
     animation-iteration-count: 2;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    /* animation-direction: alternate; *//
+    /* animation-direction: alternate; */
     /* animation-delay: .3s; */
 }
 @keyframes bounce{
