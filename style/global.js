@@ -8,7 +8,7 @@ const {width, height, scale} = Dimensions.get("window"),
 export default StyleSheet.create({
     "*": {
         "boxSizing": "border-box",
-        "fontFamily": "microsoft yehei",
+        "fontFamily": "'arail', 'microsoft yehei'",
         "fontSize": 16,
         "paddingTop": 0,
         "paddingRight": 0,
@@ -19,7 +19,18 @@ export default StyleSheet.create({
         "marginBottom": 0,
         "marginLeft": 0,
         "WebkitTransition": "all .3s ease-in-out",
+        "MozTransition": "all .3s ease-in-out",
         "transition": "all .3s ease-in-out"
+    },
+    "::-webkit-scrollbar": {
+        "width": 5,
+        "backgroundColor": "#e8e7e7"
+    },
+    "::-webkit-scrollbar-thumb": {
+        "backgroundColor": "#bfbdbb"
+    },
+    "::-webkit-scrollbar-track-piece": {
+        "borderLeft": "1px solid #d2d1d0"
     },
     "body": {
         "backgroundColor": "#F5F5F5",

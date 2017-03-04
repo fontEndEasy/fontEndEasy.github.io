@@ -38,6 +38,8 @@ $(document).ready(function() {
       clearTimeout(scaler);
       let masker = setTimeout(function() {
           mask.fadeOut(600);
+          mask.remove();
+          loading.remove();
           let skiller = setTimeout(function() {
             instroduction.animate({opacity: 1}, { duration: 600, complete: function() {
 

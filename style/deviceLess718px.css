@@ -10,7 +10,7 @@
 }
 
 .easyui-navwrap {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -18,7 +18,6 @@
 	flex-direction: column;
 	justify-content: center;
 }
-
 .easyui-nav {
 	align-self: flex-start;
 	align-self: stretch;
@@ -27,6 +26,8 @@
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .easyui-navbar {
@@ -36,13 +37,13 @@
 	display: -moz-flex;
 	display: flex;
 	justify-content: flex-start;
-	flex-direction: row;
-	margin-top: 16px;
+	flex-direction: column;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .easyui-content {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 20px;
 }
@@ -62,7 +63,7 @@
 }
 
 .easyui-content .easyui-ul > li {
-	width: 20%;
+	width: 100%;
 	align-items: flex-start;
 	height: 426px;
 	flex-grow: 1;
@@ -79,24 +80,28 @@
 }
 
 .easyui-nav .img-head {
-	flex:1;
+	flex: 1;
 	height: 182px;
-	width: 368px;
-	background: /*url(../images/img_002.jpg)*/ url(../images/blue-photo.svg) no-repeat 44% center /*-178px -240px*/ !important;
+	/* width: 368px; */
+	background: /*url(../images/img_002.jpg)*/ url(../images/blue-photo.svg) no-repeat center bottom /*-178px -240px*/ !important;
 	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 .easyui-nav .resume{
-	flex: 2;
-	align-self: center;
-	font-size: 42px;
+	flex: 1;
+	align-self: stretch;
+	font-size: 18px;
 	font-family: 'arail', 'microsoft';
 	color: #1a8cc1;
+	text-align: center;
+	height: 32px;
+	vertical-align: middle;
+	margin-top: 10px;
 }
 .easyui-nav .resume .resume-en{
-	font-size: 18px;
+	font-size: 14px;
 	color: #989696;
 }
 
@@ -157,41 +162,41 @@
 }
 
 .easyui-navbar .instroduction {
-	margin-right: 25px;
+	/* margin-right: 25px; */
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	flex: 1;
-	padding: 0 10px;
+	padding-right: 10px;
 	background-color: #FFF;
 	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 	-webkit-box-shadow: 0 0 1px #DEDEDE;
-	   -moz-box-shadow: 0 0 1px #DEDEDE;
-	        box-shadow: 0 0 1px #DEDEDE;
+	-moz-box-shadow: 0 0 1px #DEDEDE;
+	box-shadow: 0 0 1px #DEDEDE;
 	border-top: 2px solid #1a8cc1;
 	opacity: 0;
+	padding-left: 52px;
 }
 
 .easyui-navbar .skill {
 	position: relative;
 	padding: 12px;
 	-webkit-flex: 2;
-	   -moz-flex: 2;
-	        flex: 2;
-
-	margin-left: 25px;
+	-moz-flex: 2;
+	flex: 2;
+	margin-top: 25px;
 	border: 1px solid #f7f2f2;
 	background-color: #FFF;
 	-webkit-box-shadow: 0 0 1px #DEDEDE;
-	   -moz-box-shadow: 0 0 1px #DEDEDE;
-	        box-shadow: 0 0 1px #DEDEDE;
+	-moz-box-shadow: 0 0 1px #DEDEDE;
+	box-shadow: 0 0 1px #DEDEDE;
 	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 	border-top: 2px solid #1a8cc1;
 	opacity: 0;
 }
@@ -211,7 +216,7 @@
 	margin-top: 20px;
 }
 
-.easyui-navbar .skill:after {
+/*.easyui-navbar .skill:after {
 	content: '撑握技能^.^';
 	display: block;
 	font-size: 20px;
@@ -220,29 +225,28 @@
 	padding: 8px 10px;
 	border-radius: 5px;
 	background-color: #FFF;
-	right: -33px;
-	top: -52px;
+	right: 0px;
+	top: -43px;
 	line-height: 100%;
 	vertical-align: middle;
 	text-align: center;
 	-webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
 	-webkit-box-shadow: 0 0 5px #DEDEDE;
-	   -moz-box-shadow: 0 0 5px #DEDEDE;
-	        box-shadow: 0 0 5px #DEDEDE;
-
+	-moz-box-shadow: 0 0 5px #DEDEDE;
+	box-shadow: 0 0 5px #DEDEDE;
 	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
+	-moz-border-radius: 5px;
 	-webkit-writing-mode: horizontal-tb;
-	   -moz-writing-mode: horizontal-tb;
-			    writing-mode: horizontal-tb;
+	-moz-writing-mode: horizontal-tb;
+	writing-mode: horizontal-tb;
 	-webkit-transition: all .3s ease-in-out;
-	   -moz-transition: all .3s ease-in-out;
-	        transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 	border-top: 2px solid #1a8cc1;
 }
-
+*/
 .easyui-navbar .skill-animate {
 	-webkit-animation-name: bounce;
 	   -moz-animation-name: bounce;

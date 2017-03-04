@@ -2,12 +2,24 @@
 
 * {
 	box-sizing: border-box;
-	font-family: microsoft yehei;
+	font-family: 'arail', 'microsoft yehei';
 	font-size: 16px;
 	padding: 0;
 	margin: 0;
 	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+}
+
+::-webkit-scrollbar{
+		width: 5px;
+		background-color: #e8e7e7;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #bfbdbb;
+}
+::-webkit-scrollbar-track-piece{
+   border-left: 1px solid #d2d1d0;
 }
 
 body {

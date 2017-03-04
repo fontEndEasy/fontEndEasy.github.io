@@ -10,7 +10,7 @@ export default StyleSheet.create({
         "backgroundColor": "#e8e7e7"
     },
     "easyui-navwrap": {
-        "width": 1200,
+        "width": "100%",
         "marginTop": 0,
         "marginRight": "auto",
         "marginBottom": 0,
@@ -23,19 +23,21 @@ export default StyleSheet.create({
         "alignSelf": "stretch",
         "alignContent": "center",
         "marginTop": 10,
-        "display": "flex"
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "stretch"
     },
     "easyui-navbar": {
         "alignSelf": "stretch",
         "alignContent": "center",
         "display": "flex",
         "justifyContent": "flex-start",
-        "flexDirection": "row",
-        "marginTop": 16,
+        "flexDirection": "column",
+        "marginTop": 10,
         "marginBottom": 10
     },
     "easyui-content": {
-        "width": 1200,
+        "width": "100%",
         "marginTop": 20,
         "marginRight": "auto",
         "marginBottom": 0,
@@ -50,7 +52,7 @@ export default StyleSheet.create({
         "justifyContent": "space-between"
     },
     "easyui-content easyui-ul > li": {
-        "width": "20%",
+        "width": "100%",
         "alignItems": "flex-start",
         "height": 426,
         "flexGrow": 1,
@@ -71,21 +73,24 @@ export default StyleSheet.create({
     "easyui-nav img-head": {
         "flex": 1,
         "height": 182,
-        "width": 368,
-        "background": " url(../images/blue-photo.svg) no-repeat 44% center  !important",
+        "background": " url(../images/blue-photo.svg) no-repeat center bottom  !important",
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2
     },
     "easyui-nav resume": {
-        "flex": 2,
-        "alignSelf": "center",
-        "fontSize": 42,
+        "flex": 1,
+        "alignSelf": "stretch",
+        "fontSize": 18,
         "fontFamily": "'arail', 'microsoft'",
-        "color": "#1a8cc1"
+        "color": "#1a8cc1",
+        "textAlign": "center",
+        "height": 32,
+        "verticalAlign": "middle",
+        "marginTop": 10
     },
     "easyui-nav resume resume-en": {
-        "fontSize": 18,
+        "fontSize": 14,
         "color": "#989696"
     },
     "easyui-navbar p i": {
@@ -138,15 +143,11 @@ export default StyleSheet.create({
         "flexDirection": "row"
     },
     "easyui-navbar instroduction": {
-        "marginRight": 25,
         "display": "flex",
         "flexDirection": "column",
         "justifyContent": "flex-start",
         "flex": 1,
-        "paddingTop": 0,
         "paddingRight": 10,
-        "paddingBottom": 0,
-        "paddingLeft": 10,
         "backgroundColor": "#FFF",
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
@@ -155,7 +156,8 @@ export default StyleSheet.create({
         "MozBoxShadow": "0 0 1px #DEDEDE",
         "boxShadow": "0 0 1px #DEDEDE",
         "borderTop": "2px solid #1a8cc1",
-        "opacity": 0
+        "opacity": 0,
+        "paddingLeft": 52
     },
     "easyui-navbar skill": {
         "position": "relative",
@@ -166,7 +168,7 @@ export default StyleSheet.create({
         "WebkitFlex": 2,
         "MozFlex": 2,
         "flex": 2,
-        "marginLeft": 25,
+        "marginTop": 25,
         "border": "1px solid #f7f2f2",
         "backgroundColor": "#FFF",
         "WebkitBoxShadow": "0 0 1px #DEDEDE",
@@ -189,39 +191,6 @@ export default StyleSheet.create({
     },
     "easyui-navbar skill skill-container": {
         "marginTop": 20
-    },
-    "easyui-navbar skill:after": {
-        "content": "'撑握技能^.^'",
-        "display": "block",
-        "fontSize": 20,
-        "color": "#1a8cc1",
-        "position": "absolute",
-        "paddingTop": 8,
-        "paddingRight": 10,
-        "paddingBottom": 8,
-        "paddingLeft": 10,
-        "borderRadius": 5,
-        "backgroundColor": "#FFF",
-        "right": -33,
-        "top": -52,
-        "lineHeight": "100%",
-        "verticalAlign": "middle",
-        "textAlign": "center",
-        "WebkitTransform": "rotate(45deg)",
-        "MozTransform": "rotate(45deg)",
-        "transform": "rotate(45deg)",
-        "WebkitBoxShadow": "0 0 5px #DEDEDE",
-        "MozBoxShadow": "0 0 5px #DEDEDE",
-        "boxShadow": "0 0 5px #DEDEDE",
-        "WebkitBorderRadius": 5,
-        "MozBorderRadius": 5,
-        "WebkitWritingMode": "horizontal-tb",
-        "MozWritingMode": "horizontal-tb",
-        "writingMode": "horizontal-tb",
-        "WebkitTransition": "all .3s ease-in-out",
-        "MozTransition": "all .3s ease-in-out",
-        "transition": "all .3s ease-in-out",
-        "borderTop": "2px solid #1a8cc1"
     },
     "easyui-navbar skill-animate": {
         "WebkitAnimationName": "bounce",
