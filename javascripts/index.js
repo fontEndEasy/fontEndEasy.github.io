@@ -60,7 +60,7 @@ $(document).ready(function() {
                         var getBoundClent = uilist[4].getBoundingClientRect();
 
                         if(getBoundClent.top <= winHeight){
-                            _this.delay(180*(index+1)).animate({opacity: 1}, {duration: 600});
+                            _this.delay(100*(index+1)).animate({opacity: 1}, {duration: 600});
                         }
                       });
                     }
