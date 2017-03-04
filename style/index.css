@@ -230,9 +230,9 @@
 
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
-	-webkit-writing-mode: vertical-lr;
-	   -moz-writing-mode: vertical-lr;
-			    writing-mode: vertical-lr;
+	-webkit-writing-mode: horizontal-tb;
+	   -moz-writing-mode: horizontal-tb;
+			    writing-mode: horizontal-tb;
 	-webkit-transition: all .3s ease-in-out;
 	   -moz-transition: all .3s ease-in-out;
 	        transition: all .3s ease-in-out;
