@@ -11,6 +11,7 @@ $(document).ready(function() {
   getTemplateData($('.skill'), s0, skillData);
   getTemplateData($('.easyui-content'), s1, easyuilists);
 
+
   function getTemplateData(container, source, context) {
     let template = Handlebars.compile(source)
     let html = template(context);
