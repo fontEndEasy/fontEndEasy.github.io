@@ -18,7 +18,7 @@ $(document).ready(function() {
     container.html(html);
   }
   uilist = $('.easyui-list');
-  body.css('overflow-y', 'hidden');
+  body.css({'overflow-y': 'hidden', 'overflow-x': 'hidden'});
   win.on('load resize', function() {
 
     docHeight = $(document).outerHeight();
