@@ -76,7 +76,7 @@
 	flex:1;
 	height: 182px;
 	width: 368px;
-	background: /*url(../images/img_002.jpg)*/ url(../images/blue-photo.svg) no-repeat center center /*-178px -240px*/ !important;
+	background: /*url(../images/img_002.jpg)*/ url(../images/blue-photo.svg) no-repeat 44% center /*-178px -240px*/ !important;
 	-webkit-border-radius: 2px;
 	   -moz-border-radius: 2px;
 	        border-radius: 2px;

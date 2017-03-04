@@ -68,7 +68,7 @@ export default StyleSheet.create({
         "flex": 1,
         "height": 182,
         "width": 368,
-        "background": " url(../images/blue-photo.svg) no-repeat center center  !important",
+        "background": " url(../images/blue-photo.svg) no-repeat 44% center  !important",
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2
