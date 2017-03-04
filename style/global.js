@@ -22,7 +22,8 @@ export default StyleSheet.create({
         "transition": "all .3s ease-in-out"
     },
     "body": {
-        "backgroundColor": "#F5F5F5"
+        "backgroundColor": "#F5F5F5",
+        "overflowX": "hidden"
     },
     "ul": {
         "listStyle": "none"

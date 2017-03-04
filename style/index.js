@@ -66,19 +66,20 @@ export default StyleSheet.create({
         "height": 182,
         "width": 252,
         "background": "#1791BD url(../images/img_002.jpg) no-repeat -178px -240px !important",
-        "boxShadow": "0 2px 5px #cac9c9",
-        "border": "2px solid #fff",
+        "boxShadow": "0 2px 5px #206c90",
+        "border": "2px solid #206c90",
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2
     },
     "easyui-navbar p i": {
         "display": "inline-block",
-        "width": 40,
-        "height": 40,
+        "width": 26,
+        "height": 26,
         "verticalAlign": "middle",
         "position": "absolute",
-        "left": -52
+        "left": -42,
+        "top": 7
     },
     "easyui-navbar p strong": {
         "fontWeight": "normal",
@@ -137,7 +138,8 @@ export default StyleSheet.create({
         "WebkitBoxShadow": "0 0 1px #DEDEDE",
         "MozBoxShadow": "0 0 1px #DEDEDE",
         "boxShadow": "0 0 1px #DEDEDE",
-        "borderTop": "2px solid #2a99c5"
+        "borderTop": "2px solid #2a99c5",
+        "opacity": 0
     },
     "easyui-navbar skill": {
         "position": "relative",
@@ -155,7 +157,8 @@ export default StyleSheet.create({
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2,
-        "borderTop": "2px solid #2a99c5"
+        "borderTop": "2px solid #2a99c5",
+        "opacity": 0
     },
     "easyui-navbar skill skill-name": {
         "fontWeight": "bold",
@@ -281,7 +284,8 @@ export default StyleSheet.create({
     "easyui-navbar icon-email": {
         "backgroundImage": "url(../images/email.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-address": {
         "backgroundImage": "url(../images/address.svg)"
@@ -289,7 +293,8 @@ export default StyleSheet.create({
     "easyui-navbar icon-major": {
         "backgroundImage": "url(../images/major.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-education": {
         "backgroundImage": "url(../images/education.svg)"
@@ -297,52 +302,219 @@ export default StyleSheet.create({
     "easyui-navbar icon-name": {
         "backgroundImage": "url(../images/head.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-gender": {
         "backgroundImage": "url(../images/boy.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-telphone": {
         "backgroundImage": "url(../images/tel.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-height": {
         "backgroundImage": "url(../images/height.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-qq": {
         "background": "url(../images/qq.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar icon-weixin": {
         "background": "url(../images/weixin.svg)",
         "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center 3px !important"
+        "backgroundPosition": "center !important",
+        "backgroundSize": "contain"
     },
     "easyui-navbar address icon-address": {
-        "backgroundPosition": "center 3px !important",
-        "width": 40,
-        "height": 40,
-        "left": -52,
+        "backgroundPosition": "center !important",
+        "width": 26,
+        "height": 26,
+        "left": -42,
         "backgroundRepeat": "no-repeat"
     },
     "easyui-navbar major icon-major": {
-        "backgroundPosition": "center 3px !important",
-        "width": 40,
-        "height": 40,
-        "left": -52,
+        "backgroundPosition": "center !important",
+        "width": 26,
+        "height": 26,
+        "left": -42,
         "backgroundRepeat": "no-repeat"
     },
     "easyui-navbar education icon-education": {
-        "backgroundPosition": "center 3px !important",
-        "width": 40,
-        "height": 40,
-        "left": -52,
+        "backgroundPosition": "center !important",
+        "width": 26,
+        "height": 26,
+        "left": -42,
         "backgroundRepeat": "no-repeat"
+    },
+    "loading": {
+        "position": "absolute",
+        "width": 200,
+        "height": 200,
+        "marginLeft": -100,
+        "marginTop": -100,
+        "left": "50%",
+        "top": "50%",
+        "backgroundColor": "#FFF",
+        "zIndex": 3,
+        "WebkitBorderRadius": 5,
+        "MozBorderRadius": 5,
+        "borderRadius": 5
+    },
+    "mask": {
+        "position": "absolute",
+        "top": 0,
+        "bottom": 0,
+        "backgroundColor": "#deeaeb",
+        "width": "100%",
+        "opacity": 1
+    },
+    "loading loading-eyes": {
+        "width": 100,
+        "height": 16,
+        "borderRadius": 5,
+        "WebkitAnimationTimingFunction": "linear",
+        "MozAnimationTimingFunction": "linear",
+        "animationTimingFunction": "linear",
+        "WebkitAnimationIterationCount": "infinite",
+        "MozAnimationIterationCount": "infinite",
+        "animationIterationCount": "infinite",
+        "WebkitAnimationFillMode": "backwards",
+        "MozAnimationFillMode": "backwards",
+        "animationFillMode": "backwards",
+        "WebkitAnimationDuration": "1s",
+        "MozAnimationDuration": "1s",
+        "animationDuration": "1s",
+        "backgroundColor": "#2a99c5",
+        "position": "absolute"
+    },
+    "loading loading-leyes": {
+        "WebkitAnimationName": "rotatelEyes",
+        "MozAnimationName": "rotatelEyes",
+        "animationName": "rotatelEyes",
+        "WebkitAnimationDirection": "normal",
+        "MozAnimationDirection": "normal",
+        "animationDirection": "normal"
+    },
+    "loading loading-reyes": {
+        "width": 25,
+        "WebkitAnimationName": "rotaterEyes",
+        "MozAnimationName": "rotaterEyes",
+        "animationName": "rotaterEyes",
+        "WebkitAnimationDirection": "reverse",
+        "MozAnimationDirection": "reverse",
+        "animationDirection": "reverse",
+        "right": 0
+    },
+    "loading loading-eyes rotate": {
+        "width": 16,
+        "height": 16,
+        "WebkitBorderRadius": "50% 50%",
+        "MozBorderRadius": "50% 50%",
+        "borderRadius": "50% 50%",
+        "backgroundColor": "#FFF",
+        "display": "block",
+        "position": "absolute"
+    },
+    "loading loading-leyes rotate": {
+        "right": 0
+    },
+    "loading loading-reyes rotate": {
+        "left": 0
+    },
+    "loading loading-mouth": {
+        "width": 62,
+        "height": 48,
+        "background": "url(../images/eyes.svg) no-repeat center center !important",
+        "position": "absolute",
+        "bottom": 58,
+        "WebkitBorderRadius": 3,
+        "MozBorderRadius": 3,
+        "borderRadius": 3,
+        "WebkitAnimationName": "closeAndOpenMouth",
+        "MozAnimationName": "closeAndOpenMouth",
+        "animationName": "closeAndOpenMouth",
+        "WebkitAnimationDuration": "1.8s",
+        "MozAnimationDuration": "1.8s",
+        "animationDuration": "1.8s",
+        "WebkitAnimationDirection": "normal",
+        "MozAnimationDirection": "normal",
+        "animationDirection": "normal",
+        "WebkitAnimationFillMode": "backwards",
+        "MozAnimationFillMode": "backwards",
+        "animationFillMode": "backwards",
+        "WebkitAnimationTimingFunction": "cubic-bezier(1,1,.1,1)",
+        "MozAnimationTimingFunction": "cubic-bezier(1,1,.1,1)",
+        "animationTimingFunction": "cubic-bezier(1,1,.1,1)",
+        "WebkitAnimationIterationCount": "infinite",
+        "MozAnimationIterationCount": "infinite",
+        "animationIterationCount": "infinite"
+    },
+    "loading loading-lmouth": {
+        "left": 20
+    },
+    "loading loading-rmouth": {
+        "right": 20
+    },
+    "loading loading-bar": {
+        "height": 20,
+        "width": "100%",
+        "position": "absolute",
+        "borderTop": "2px solid #2a99c5",
+        "bottom": 0,
+        "overflow": "hidden"
+    },
+    "loading loading-bar span": {
+        "WebkitAnimationName": "navAnim",
+        "MozAnimationName": "navAnim",
+        "animationName": "navAnim",
+        "WebkitAnimationDuration": "3s",
+        "MozAnimationDuration": "3s",
+        "animationDuration": "3s",
+        "WebkitAnimationDirection": "normal",
+        "MozAnimationDirection": "normal",
+        "animationDirection": "normal",
+        "WebkitAnimationFillMode": "backwards",
+        "MozAnimationFillMode": "backwards",
+        "animationFillMode": "backwards",
+        "WebkitAnimationTimingFunction": "cubic-bezier(1,.3,0,.9)",
+        "MozAnimationTimingFunction": "cubic-bezier(1,.3,0,.9)",
+        "animationTimingFunction": "ease-in-out",
+        "WebkitAnimationIterationCount": "infinite",
+        "MozAnimationIterationCount": "infinite",
+        "animationIterationCount": "infinite",
+        "display": "inline-block",
+        "position": "absolute",
+        "width": 10,
+        "height": 10,
+        "borderRadius": "50% 50%",
+        "backgroundColor": "#2a99c5",
+        "verticalAlign": "middle",
+        "top": "50%",
+        "marginTop": -5
+    },
+    "loading loading-bar span:nth-child(1)": {
+        "WebkitAnimationDelay": ".1s",
+        "MozAnimationDelay": ".1s",
+        "animationDelay": ".1s"
+    },
+    "loading loading-bar span:nth-child(2)": {
+        "WebkitAnimationDelay": ".4s",
+        "MozAnimationDelay": ".4s",
+        "animationDelay": ".4s"
+    },
+    "loading loading-bar span:nth-child(3)": {
+        "WebkitAnimationDelay": ".7s",
+        "MozAnimationDelay": ".7s",
+        "animationDelay": ".7s"
     }
 });
