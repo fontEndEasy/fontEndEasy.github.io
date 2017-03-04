@@ -588,6 +588,14 @@
 .loading .loading-leyes{
 	left: 30px;
 }
+.loading .loading-mouth,
+.loading .loading-eyes,
+.loading .loading-bar span{
+	-webkit-transform: translate3d(0, 0, 0);
+	   -moz-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+}
 .loading .loading-mouth{
 	width: 62px;
 	height: 48px;

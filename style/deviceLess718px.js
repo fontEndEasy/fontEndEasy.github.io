@@ -412,7 +412,11 @@ export default StyleSheet.create({
         "animationDuration": "1s",
         "backgroundColor": "#1a8cc1",
         "position": "absolute",
-        "top": 75
+        "top": 75,
+        "WebkitTransform": "translate3d(0, 0, 0)",
+        "MozTransform": "translate3d(0, 0, 0)",
+        "MsTransform": "translate3d(0, 0, 0)",
+        "transform": "translate3d(0, 0, 0)"
     },
     "loading loading-leyes": {
         "WebkitAnimationName": "rotatelEyes",
@@ -447,6 +451,10 @@ export default StyleSheet.create({
         "marginLeft": -8
     },
     "loading loading-mouth": {
+        "WebkitTransform": "translate3d(0, 0, 0)",
+        "MozTransform": "translate3d(0, 0, 0)",
+        "MsTransform": "translate3d(0, 0, 0)",
+        "transform": "translate3d(0, 0, 0)",
         "width": 62,
         "height": 48,
         "background": "url(../images/eyes.svg) no-repeat center center !important",
@@ -475,20 +483,11 @@ export default StyleSheet.create({
         "animationIterationCount": "infinite",
         "display": "none"
     },
-    "loading loading-lmouth": {
-        "left": 20
-    },
-    "loading loading-rmouth": {
-        "right": 20
-    },
-    "loading loading-bar": {
-        "height": 20,
-        "width": "100%",
-        "position": "absolute",
-        "bottom": 35,
-        "overflow": "hidden"
-    },
     "loading loading-bar span": {
+        "WebkitTransform": "translate3d(0, 0, 0)",
+        "MozTransform": "translate3d(0, 0, 0)",
+        "MsTransform": "translate3d(0, 0, 0)",
+        "transform": "translate3d(0, 0, 0)",
         "WebkitAnimationName": "navAnim",
         "MozAnimationName": "navAnim",
         "animationName": "navAnim",
@@ -516,6 +515,19 @@ export default StyleSheet.create({
         "verticalAlign": "middle",
         "top": "50%",
         "marginTop": -5
+    },
+    "loading loading-lmouth": {
+        "left": 20
+    },
+    "loading loading-rmouth": {
+        "right": 20
+    },
+    "loading loading-bar": {
+        "height": 20,
+        "width": "100%",
+        "position": "absolute",
+        "bottom": 35,
+        "overflow": "hidden"
     },
     "loading loading-bar span:nth-child(1)": {
         "WebkitAnimationDelay": ".1s",
