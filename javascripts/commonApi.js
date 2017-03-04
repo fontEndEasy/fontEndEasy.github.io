@@ -7,11 +7,11 @@ var skillData = {
         { name: '6.能够熟练使用Notepad++，Atom，VSCode，Sublime Text，Bracketst, Webstorm, Vim等工具进行前端页面设计和开发。' },
         { name: '7.熟悉前端性能分析以及相关调试工具，如Firebug，chrome, YSlow, Fiddler, pagespeed,postman等。' },
         { name: '8.熟练使用SVN、Git等版本控制系统。' },
-        { name: '9.熟悉前端安全问题Xss/CSRF/Sql注入以及相关解决方案。' },
+        { name: '9.熟悉前端安全问题以及相关解决方案。' },
         { name: '10.使用过主流的JS MV*技术栈开发项目,比如React+redux/Vue+vuex/Angular，熟悉常用JS(Libraries)库，如Zepto，jQuery，jQueryMobile/UI，Underscore等。' },
         { name: '11.熟悉主流的CSS框架，例如Bootstrap/Foundation。 ' },
         { name: '12.熟悉前端页面架构和布局，CSS前后预处理语言LESS/SASS/postcss 等。' },
-        { name: '13.了解Nginx/Apache/Tomcat/JBoss等服务器的应用部署和配置' },
+        { name: '13.了解Nginx/Apache/Tomcat/JBoss/jetty等服务器的应用部署和配置' },
         { name: '14.了解MySQL/Mongodb 等数据库。' },
         { name: '15.有良好的Php/Java(springMVC)/NodeJS(express/koa/thinkjs) 等服务器端语言应用基础，熟悉前后端交互逻辑。' }],
   currentLearn: {
