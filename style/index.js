@@ -22,7 +22,8 @@ export default StyleSheet.create({
     "easyui-nav": {
         "alignSelf": "stretch",
         "alignContent": "center",
-        "marginTop": 10
+        "marginTop": 10,
+        "display": "flex"
     },
     "easyui-navbar": {
         "alignSelf": "stretch",
@@ -60,17 +61,28 @@ export default StyleSheet.create({
         "marginLeft": 12,
         "boxShadow": "0 1px 42px #DEDEDE",
         "backgroundColor": "#FFF",
-        "borderTop": "2px solid #1b8ec3"
+        "borderTop": "2px solid #1a8cc1",
+        "opacity": 0
     },
     "easyui-nav img-head": {
+        "flex": 1,
         "height": 182,
-        "width": 252,
-        "background": "#1791BD url(../images/img_002.jpg) no-repeat -178px -240px !important",
-        "boxShadow": "0 2px 5px #206c90",
-        "border": "2px solid #206c90",
+        "width": 368,
+        "background": " url(../images/blue-photo.svg) no-repeat center center  !important",
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2
+    },
+    "easyui-nav resume": {
+        "flex": 2,
+        "alignSelf": "center",
+        "fontSize": 42,
+        "fontFamily": "'arail', 'microsoft'",
+        "color": "#1a8cc1"
+    },
+    "easyui-nav resume resume-en": {
+        "fontSize": 18,
+        "color": "#989696"
     },
     "easyui-navbar p i": {
         "display": "inline-block",
@@ -97,7 +109,7 @@ export default StyleSheet.create({
         "content": "''",
         "display": "block",
         "height": 2,
-        "backgroundColor": "#1b98ca",
+        "backgroundColor": "#1a8cc1",
         "MozTransform": "scaleX(0)",
         "WebkitTransform": "scaleX(0)",
         "transform": "scaleX(0)",
@@ -138,7 +150,7 @@ export default StyleSheet.create({
         "WebkitBoxShadow": "0 0 1px #DEDEDE",
         "MozBoxShadow": "0 0 1px #DEDEDE",
         "boxShadow": "0 0 1px #DEDEDE",
-        "borderTop": "2px solid #2a99c5",
+        "borderTop": "2px solid #1a8cc1",
         "opacity": 0
     },
     "easyui-navbar skill": {
@@ -157,7 +169,7 @@ export default StyleSheet.create({
         "WebkitBorderRadius": 2,
         "MozBorderRadius": 2,
         "borderRadius": 2,
-        "borderTop": "2px solid #2a99c5",
+        "borderTop": "2px solid #1a8cc1",
         "opacity": 0
     },
     "easyui-navbar skill skill-name": {
@@ -176,7 +188,7 @@ export default StyleSheet.create({
         "content": "'撑握技能^.^'",
         "display": "block",
         "fontSize": 20,
-        "color": "#1185b3",
+        "color": "#1a8cc1",
         "position": "absolute",
         "paddingTop": 8,
         "paddingRight": 10,
@@ -201,7 +213,7 @@ export default StyleSheet.create({
         "MozTransition": "all .3s ease-in-out",
         "WebkitTransition": "all .3s ease-in-out",
         "transition": "all .3s ease-in-out",
-        "borderTop": "2px solid #2a99c5"
+        "borderTop": "2px solid #1a8cc1"
     },
     "easyui-navbar skill-animate": {
         "WebkitAnimationName": "bounce",
@@ -394,7 +406,7 @@ export default StyleSheet.create({
         "WebkitAnimationDuration": "1s",
         "MozAnimationDuration": "1s",
         "animationDuration": "1s",
-        "backgroundColor": "#2a99c5",
+        "backgroundColor": "#1a8cc1",
         "position": "absolute"
     },
     "loading loading-leyes": {
@@ -469,7 +481,7 @@ export default StyleSheet.create({
         "height": 20,
         "width": "100%",
         "position": "absolute",
-        "borderTop": "2px solid #2a99c5",
+        "borderTop": "2px solid #1a8cc1",
         "bottom": 0,
         "overflow": "hidden"
     },
@@ -497,7 +509,7 @@ export default StyleSheet.create({
         "width": 10,
         "height": 10,
         "borderRadius": "50% 50%",
-        "backgroundColor": "#2a99c5",
+        "backgroundColor": "#1a8cc1",
         "verticalAlign": "middle",
         "top": "50%",
         "marginTop": -5
@@ -516,5 +528,10 @@ export default StyleSheet.create({
         "WebkitAnimationDelay": ".7s",
         "MozAnimationDelay": ".7s",
         "animationDelay": ".7s"
+    },
+    "easyui-footer": {
+        "height": 150,
+        "borderTop": "2px solid #1a8cc1",
+        "backgroundColor": "#FFF"
     }
 });

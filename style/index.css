@@ -3,7 +3,9 @@
 .easyui-header {
 	background-color: #e8e7e7;
 	/*
-
+	background-image: -webkit-linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
+	background-image: -moz-linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
+	background-image: linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
 	*/
 }
 
@@ -22,6 +24,9 @@
 	align-self: stretch;
 	align-content: center;
 	margin-top: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
 }
 
 .easyui-navbar {
@@ -63,18 +68,30 @@
 	margin: 12px 12px;
 	box-shadow: 0 1px 42px #DEDEDE;
 	background-color: #FFF;
-	border-top: 2px solid #1b8ec3;
+	border-top: 2px solid #1a8cc1;
+	opacity: 0;
 }
 
 .easyui-nav .img-head {
+	flex:1;
 	height: 182px;
-	width: 252px;
-	background: #1791BD url(../images/img_002.jpg) no-repeat -178px -240px !important;
-	box-shadow: 0 2px 5px #206c90;
-	border: 2px solid #206c90;
+	width: 368px;
+	background: /*url(../images/img_002.jpg)*/ url(../images/blue-photo.svg) no-repeat center center /*-178px -240px*/ !important;
 	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+.easyui-nav .resume{
+	flex: 2;
+	align-self: center;
+	font-size: 42px;
+	font-family: 'arail', 'microsoft';
+	color: #1a8cc1;
+}
+.easyui-nav .resume .resume-en{
+	font-size: 18px;
+	color: #989696;
 }
 
 .easyui-navbar p i {
@@ -108,7 +125,7 @@
 	content: '';
 	display: block;
 	height: 2px;
-	background-color: #1b98ca;
+	background-color: #1a8cc1;
 	-moz-transform: scaleX(0);
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -149,7 +166,7 @@
 	-webkit-box-shadow: 0 0 1px #DEDEDE;
 	-moz-box-shadow: 0 0 1px #DEDEDE;
 	box-shadow: 0 0 1px #DEDEDE;
-	border-top: 2px solid #2a99c5;
+	border-top: 2px solid #1a8cc1;
 	opacity: 0;
 }
 
@@ -166,7 +183,7 @@
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	border-top: 2px solid #2a99c5;
+	border-top: 2px solid #1a8cc1;
 	opacity: 0;
 }
 
@@ -189,7 +206,7 @@
 	content: '撑握技能^.^';
 	display: block;
 	font-size: 20px;
-	color: #1185b3;
+	color: #1a8cc1;
 	position: absolute;
 	padding: 8px 10px;
 	border-radius: 5px;
@@ -211,7 +228,7 @@
 	-moz-transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	border-top: 2px solid #2a99c5;
+	border-top: 2px solid #1a8cc1;
 }
 
 .easyui-navbar .skill-animate {
@@ -497,7 +514,7 @@
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	animation-duration: 1s;
-	background-color: #2a99c5;
+	background-color: #1a8cc1;
 	position: absolute;
 }
 .loading .loading-leyes{
@@ -606,7 +623,7 @@
 	height: 20px;
 	width: 100%;
 	position: absolute;
-	border-top: 2px solid #2a99c5;
+	border-top: 2px solid #1a8cc1;
 	bottom:0;
 	overflow:hidden;
 }
@@ -635,7 +652,7 @@
 	width: 10px;
 	height: 10px;
 	border-radius: 50% 50%;
-	background-color: #2a99c5;
+	background-color: #1a8cc1;
 	vertical-align:middle;
 	top: 50%;
 	margin-top: -5px;
@@ -680,4 +697,15 @@
 	100%{
 		transform: translateX(400px)
 	}
+}
+
+
+.easyui-footer{
+	height: 150px;
+	border-top: 2px solid #1a8cc1;
+	/*background-image: -webkit-linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
+	background-image: -moz-linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
+	background-image: linear-gradient(left top, #0b648e, #3c9ebd, #1a8cc1, #68c7e6, #206c90);
+	*/
+	background-color:#FFF;
 }

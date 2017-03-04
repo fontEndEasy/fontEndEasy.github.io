@@ -3,7 +3,7 @@ $(document).ready(function() {
   /*setTimeout(function() {
     $('#skill').addClass('skill-animate');
   }, 300);*/
-
+  $('body').css('overflow-y', 'hidden');
   function getTemplateData(container, source, context) {
     let template = Handlebars.compile(source)
     let html = template(context);
@@ -22,18 +22,35 @@ $(document).ready(function() {
       $('.loading').fadeOut(1000);
       clearTimeout(scaler);
       let masker = setTimeout(function() {
-          $('.mask').fadeOut(800);
+          $('.mask').fadeOut(600);
           let skiller = setTimeout(function() {
             $('.instroduction').animate({opacity: 1}, { duration: 600, complete: function() {
 
-              $('.skill').animate({opacity: 1} , {duration: 600});
+              $('.skill').animate({opacity: 1} , {duration: 600, complete: function() {
+
+                $('.easyui-list').each(function(index) {
+                  let _this = $(this);
+                  if(index < 4) {
+                      $(this).delay(300*(index+1)).animate({opacity: 1},{duration: 600});
+                      $('body').css('overflow-y', 'auto');
+                  }else{
+                    $(document).on('scroll', function() {
+                      let getBoundClent = $('.easyui-list')[4].getBoundingClientRect();
+                      let getWinClent = $(window).height();
+                      if(getBoundClent.top <= getWinClent){
+                          _this.delay(300*(index+1)).animate({opacity: 1}, {duration: 600});
+                      }
+                    });
+                  }
+                });
+              }});
             }});
             clearTimeout(skiller);
-          }, 1000);
+          }, 300);
           clearTimeout(masker);
       }, 2000);
       clearTimeout(loader);
     }, 2000);
-  }, 5000);
+  }, 1000);
 
 });
