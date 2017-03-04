@@ -11,9 +11,9 @@ $(document).ready(function() {
   }
 
   let s0 = $('#entry-template').html();
-  // let s1 = $('#easyui-ul').html();
+  let s1 = $('#easyui-ul').html();
   getTemplateData($('.skill'), s0, skillData);
-  // getTemplateData($('.easyui-content'), s1, easyuilists);
+  getTemplateData($('.easyui-content'), s1, easyuilists);
   var loader = setTimeout(function(){
     $('.loading').css('transform', 'rotate(360deg)');
 

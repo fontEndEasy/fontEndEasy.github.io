@@ -40,10 +40,10 @@ var easyuilists = {
     name: 'P2P互联网理财交易平台(PC端)',
     title: 'Frontend Developer Enginner'
   },{
-    name: '国泰安横县茉莉花种植与加工系统V1.0',
+    name: '横县茉莉花种植与加工系统V1.0',
     title: 'Frontend Developer Enginner'
   },{
-    name: '国泰安教育资源展示平台',
+    name: '教育资源展示平台',
     title: 'Frontend Developer Enginner'
   },{
     name: '医药平台管理系统',
@@ -52,7 +52,7 @@ var easyuilists = {
     name: 'OMS仓库订单管理系统',
     title: 'Frontend Developer Enginner'
   },{
-    name: '澳道户外电子商务网站',
+    name: '户外电子商务网站',
     title: 'Frontend Developer Enginner'
   },{
     name: 'Browser-Cross',
