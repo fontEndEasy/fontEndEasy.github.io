@@ -403,9 +403,9 @@ export default StyleSheet.create({
         "top": "50%",
         "backgroundColor": "#FFF",
         "zIndex": 3,
-        "WebkitBorderRadius": 5,
-        "MozBorderRadius": 5,
-        "borderRadius": 5
+        "WebkitBorderRadius": "25% 25%",
+        "MozBorderRadius": "25% 25%",
+        "borderRadius": "25% 25%"
     },
     "mask": {
         "position": "absolute",
@@ -416,11 +416,11 @@ export default StyleSheet.create({
         "opacity": 1
     },
     "loading loading-eyes": {
-        "width": 100,
-        "height": 16,
-        "WebkitBorderRadius": 5,
-        "MozBorderRadius": 5,
-        "borderRadius": 5,
+        "width": 42,
+        "height": 42,
+        "WebkitBorderRadius": "50% 50%",
+        "MozBorderRadius": "50% 50%",
+        "borderRadius": "50% 50%",
         "WebkitAnimationTimingFunction": "linear",
         "MozAnimationTimingFunction": "linear",
         "animationTimingFunction": "linear",
@@ -434,7 +434,8 @@ export default StyleSheet.create({
         "MozAnimationDuration": "1s",
         "animationDuration": "1s",
         "backgroundColor": "#1a8cc1",
-        "position": "absolute"
+        "position": "absolute",
+        "top": 75
     },
     "loading loading-leyes": {
         "WebkitAnimationName": "rotatelEyes",
@@ -442,17 +443,17 @@ export default StyleSheet.create({
         "animationName": "rotatelEyes",
         "WebkitAnimationDirection": "normal",
         "MozAnimationDirection": "normal",
-        "animationDirection": "normal"
+        "animationDirection": "normal",
+        "left": 30
     },
     "loading loading-reyes": {
-        "width": 25,
         "WebkitAnimationName": "rotaterEyes",
         "MozAnimationName": "rotaterEyes",
         "animationName": "rotaterEyes",
         "WebkitAnimationDirection": "reverse",
         "MozAnimationDirection": "reverse",
         "animationDirection": "reverse",
-        "right": 0
+        "right": 30
     },
     "loading loading-eyes rotate": {
         "width": 16,
@@ -462,13 +463,11 @@ export default StyleSheet.create({
         "borderRadius": "50% 50%",
         "backgroundColor": "#FFF",
         "display": "block",
-        "position": "absolute"
-    },
-    "loading loading-leyes rotate": {
-        "right": 0
-    },
-    "loading loading-reyes rotate": {
-        "left": 0
+        "position": "absolute",
+        "left": "50%",
+        "top": "50%",
+        "marginTop": -8,
+        "marginLeft": -8
     },
     "loading loading-mouth": {
         "width": 62,
@@ -496,7 +495,8 @@ export default StyleSheet.create({
         "animationTimingFunction": "cubic-bezier(1,1,.1,1)",
         "WebkitAnimationIterationCount": "infinite",
         "MozAnimationIterationCount": "infinite",
-        "animationIterationCount": "infinite"
+        "animationIterationCount": "infinite",
+        "display": "none"
     },
     "loading loading-lmouth": {
         "left": 20
@@ -508,8 +508,7 @@ export default StyleSheet.create({
         "height": 20,
         "width": "100%",
         "position": "absolute",
-        "borderTop": "2px solid #1a8cc1",
-        "bottom": 0,
+        "bottom": 35,
         "overflow": "hidden"
     },
     "loading loading-bar span": {

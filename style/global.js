@@ -20,7 +20,11 @@ export default StyleSheet.create({
         "marginLeft": 0,
         "WebkitTransition": "all .3s ease-in-out",
         "MozTransition": "all .3s ease-in-out",
-        "transition": "all .3s ease-in-out"
+        "transition": "all .3s ease-in-out",
+        "WebkitTapHighlightColor": "transparent",
+        "MozTapHighlightColor": "transparent",
+        "MsTapHighlightColor": "transparent",
+        "tapHighlightColor": "transparent"
     },
     "::-webkit-scrollbar": {
         "width": 5,

@@ -111,7 +111,7 @@
 	height: 26px;
 	vertical-align: middle;
 	position: absolute;
-	left: -42px;
+	left: -32px;
 	top: 7px;
 }
 
@@ -149,6 +149,7 @@
 .easyui-navbar  p > label {
 	cursor: pointer;
 	display: block;
+	padding: 0 6px;
 }
 
 .easyui-navbar  p:hover:after {
@@ -179,7 +180,7 @@
 	box-shadow: 0 0 1px #DEDEDE;
 	border-top: 2px solid #1a8cc1;
 	opacity: 0;
-	padding-left: 52px;
+	padding-left: 44px;
 }
 
 .easyui-navbar .skill {
@@ -498,7 +499,7 @@
 	background-position: center !important;
 	width: 26px;
 	height: 26px;
-	left: -42px;
+	left: -32px;
 	background-repeat: no-repeat;
 }
 
@@ -512,9 +513,9 @@
 	top: 50%;
 	background-color: #FFF;
 	z-index: 3;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
+	-webkit-border-radius: 25% 25%;
+	   -moz-border-radius: 25% 25%;
+	        border-radius: 25% 25%;
 }
 .mask{
 	position: absolute;
@@ -529,11 +530,11 @@
 	opacity: 1;
 }
 .loading .loading-eyes{
-	width: 100px;
-	height: 16px;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
+	width: 42px;
+	height: 42px;
+	-webkit-border-radius: 50% 50%;
+	   -moz-border-radius: 50% 50%;
+	        border-radius: 50% 50%;
 	-webkit-animation-timing-function: linear;
 	   -moz-animation-timing-function: linear;
 	        animation-timing-function: linear;
@@ -548,6 +549,7 @@
 	        animation-duration: 1s;
 	background-color: #1a8cc1;
 	position: absolute;
+	top: 75px;
 }
 .loading .loading-leyes{
 	-webkit-animation-name: rotatelEyes;
@@ -559,7 +561,6 @@
 }
 
 .loading .loading-reyes{
-	width: 25px;
 	-webkit-animation-name: rotaterEyes;
 	   -moz-animation-name: rotaterEyes;
 	        animation-name: rotaterEyes;
@@ -576,15 +577,16 @@
 	background-color:#FFF;
 	display: block;
 	position: absolute;
-}
-.loading .loading-leyes .rotate{
-	right: 0;
+	left: 50%;
+	top: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
 }
 .loading .loading-reyes{
-	right: 0;
+	right: 30px;
 }
-.loading .loading-reyes .rotate{
-	left: 0;
+.loading .loading-leyes{
+	left: 30px;
 }
 .loading .loading-mouth{
 	width: 62px;
@@ -613,6 +615,7 @@
 	-webkit-animation-iteration-count: infinite;
 	   -moz-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
+					display: none;
 }
 
 .loading .loading-lmouth{
@@ -621,6 +624,7 @@
 .loading .loading-rmouth{
 	right: 20px;
 }
+/*
 @keyframes closeAndOpenMouth{
 	0%{
 		transform: scaleY(1);
@@ -629,27 +633,28 @@
 		transform: scaleY(0);
 	}
 }
+*/
 @keyframes rotatelEyes{
 	0%{
-		transform-origin: left;
+		transform-origin: top;
 		transform: rotate(0deg);
 	}
 	100%{
-		transform-origin: left;
+		transform-origin: top;
 		transform: rotate(360deg);
 	}
 }
 @keyframes rotaterEyes{
 	0%{
-		transform-origin: right;
+		transform-origin: top;
 		transform: rotate(0deg);
 	}
 	100%{
-		transform-origin: right;
+		transform-origin: top;
 		transform: rotate(360deg);
 	}
 }
-
+/*
 @-webkit-keyframes closeAndOpenMouth{
 	0%{
 		-webkit-transform: scaleY(1);
@@ -658,23 +663,24 @@
 		-webkit-transform: scaleY(0);
 	}
 }
+*/
 @-webkit-keyframes rotatelEyes{
 	0%{
-		-webkit-transform-origin: left;
+		-webkit-transform-origin: top;
 		-webkit-transform: rotate(0deg);
 	}
 	100%{
-		-webkit-transform-origin: left;
+		-webkit-transform-origin: top;
 		-webkit-transform: rotate(360deg);
 	}
 }
 @-webkit-keyframes rotaterEyes{
 	0%{
-		-webkit-transform-origin: right;
+		-webkit-transform-origin: top;
 		-webkit-transform: rotate(0deg);
 	}
 	100%{
-		-webkit-transform-origin: right;
+		-webkit-transform-origin: top;
 		-webkit-transform: rotate(360deg);
 	}
 }
@@ -684,9 +690,9 @@
 	height: 20px;
 	width: 100%;
 	position: absolute;
-	border-top: 2px solid #1a8cc1;
-	bottom:0;
-	overflow:hidden;
+
+	bottom: 35px;
+	overflow: hidden;
 }
 
 .loading .loading-bar span{

@@ -1,21 +1,22 @@
 $(document).ready(function() {
-  let loading = $('.loading');
-  let mask = $('.mask');
-  let instroduction = $('.instroduction')
-  let skill = $('.skill');
-  let body = $('body');
-  let win = $(window);
-  let s0 = $('#entry-template').html();
-  let s1 = $('#easyui-ul').html();
-  let uilist, docHeight, scrollHeight, winHeight;
+  var loading = $('.loading');
+  var mask = $('.mask');
+  var instroduction = $('.instroduction')
+  var skill = $('.skill');
+  var body = $('body');
+  var win = $(window);
+  var s0 = $('#entry-template').html();
+  var s1 = $('#easyui-ul').html();
+  var uilist, docHeight, scrollHeight, winHeight;
   getTemplateData($('.skill'), s0, skillData);
   getTemplateData($('.easyui-content'), s1, easyuilists);
 
 
   function getTemplateData(container, source, context) {
-    let template = Handlebars.compile(source)
-    let html = template(context);
+    var template = Handlebars.compile(source)
+    var html = template(context);
     container.html(html);
+
   }
   uilist = $('.easyui-list');
   body.css({'overflow-y': 'hidden', 'overflow-x': 'hidden'});
@@ -28,25 +29,26 @@ $(document).ready(function() {
     loading.css({top:  scrollHeight + (winHeight / 2) });
   });
 
-  let loader = setTimeout(function(){
+  var loader = setTimeout(function(){
 
     loading.css('transform', 'rotate(360deg)');
 
-    let scaler = setTimeout(function() {
+    var scaler = setTimeout(function() {
       loading.css('transform', 'rotate(0deg)');
       loading.fadeOut(1000);
       clearTimeout(scaler);
-      let masker = setTimeout(function() {
+      var masker = setTimeout(function() {
           mask.fadeOut(600);
           mask.remove();
           loading.remove();
-          let skiller = setTimeout(function() {
+          var skiller = setTimeout(function() {
+
             instroduction.animate({opacity: 1}, { duration: 600, complete: function() {
 
               skill.animate({opacity: 1} , {duration: 600, complete: function() {
 
                 uilist.each(function(index) {
-                  let _this = $(this);
+                  var _this = $(this);
                   if(index < 4) {
                       $(this).delay(300*(index+1)).animate({opacity: 1},{duration: 600});
                       $('body').css('overflow-y', 'auto');
@@ -55,7 +57,7 @@ $(document).ready(function() {
                       _this.delay(300*(index+1)).animate({opacity: 1}, {duration: 600});
                     }else{
                       $(document).on('scroll', function() {
-                        let getBoundClent = uilist[4].getBoundingClientRect();
+                        var getBoundClent = uilist[4].getBoundingClientRect();
 
                         if(getBoundClent.top <= winHeight){
                             _this.delay(180*(index+1)).animate({opacity: 1}, {duration: 600});
