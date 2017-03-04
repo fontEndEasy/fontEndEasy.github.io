@@ -1,8 +1,6 @@
 $(document).ready(function() {
   let loading = $('.loading');
-  /*setTimeout(function() {
-    $('#skill').addClass('skill-animate');
-  }, 300);*/
+  
   $('body').css('overflow-y', 'hidden');
   function getTemplateData(container, source, context) {
     let template = Handlebars.compile(source)
