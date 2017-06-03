@@ -513,9 +513,11 @@
 	top: 50%;
 	background-color: #FFF;
 	z-index: 3;
+	/*
 	-webkit-border-radius: 25% 25%;
 	   -moz-border-radius: 25% 25%;
 	        border-radius: 25% 25%;
+	*/
 }
 .mask{
 	position: absolute;
