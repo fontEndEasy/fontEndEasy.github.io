@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>武汉东天红数字科技有限公司</title>
+<meta name="description" content="武汉东天红数字科技有限公司是武汉乃至全国最专业的高端二手车交易平台,提供最权威最快捷的车商贷互联网金融服务." />
+<meta name="keywords" content="武汉东天红数字科技有限公司" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--<link href="http://s.z2a.uxingke.com/admin/css/main.css" rel="stylesheet" type="text/css"> -->
+<script type="text/javascript" src="/skin/js/jquery-1.7.2.min.js"></script>
+<script>
+window.onload= new function() {
+	 setTimeout(function(){window.scrollTo(0,0);}, 50);
+} 
+</script>
+<script type="text/javascript" src="/skin/js/duoduo.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.touchslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
+</script>
+<link href="/skin/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/animate.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/g2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="headbj">
+  <div class="headbj_mid">
+    <div class="logo" style=" margin-left:-32px; margin-top:15px;"><a href="/" title="武汉东天红数字科技有限公司"><img src="/skin/images/dongtianhon.png" alt="武汉东天红数字科技有限公司" width="56" height="56" /></a></div>
+    <div class="menu">
+      <div class="glable_nav">
+        <div id="nav-menu">
+          <div class="container">
+            <div class="outerbox">
+              <div class="innerbox clearfixmenu">
+                <div class="menu">
+                  <div class="glable_nav">
+                    <div id="nav-menu">
+                      <div class="container">
+                        <div class="outerbox">
+                          <div class="innerbox clearfixmenu">
+                            <ul class="menu">
+                              <!--11111-->
+                              <li class="stmenu">
+                                <div class="nav01"><a href="/" class="xialaguang nav\hover" title="首页"><span>首页 </span></a></div>
+                              </li>
+                              <!--11111--> 
+                              <li class="stmenu">
+                                <div class="nav01"><a href="/a/guanyuwomen/" class="xialaguang" title="关于东天红"><span> 关于东天红 </span></a></div>
+                                <ul class="children clearfixmenu pngFix">
+                                  
+                                  <li><a href="/a/guanyuwomen/qiyejianjie/" title="公司介绍"><span>公司介绍</span></a></li>
+                                  
+                                  <li><a href="/a/guanyuwomen/qiyewenhua/" title="企业文化"><span>企业文化</span></a></li>
+                                  
+                                </ul>
+                              </li><li class="stmenu">
+                                <div class="nav01"><a href="/a/chanpinyufuwu/" class="xialaguang" title="产品介绍"><span> 产品介绍 </span></a></div>
+                                <ul class="children clearfixmenu pngFix">
+                                  
+                                  <li><a href="/a/chanpinyufuwu/yuancailiao/" title="产品起源"><span>产品起源</span></a></li>
+                                  
+                                  <li><a href="/a/chanpinyufuwu/lingbujian/" title="产品优势"><span>产品优势</span></a></li>
+                                  
+                                 
+                                  
+                                </ul>
+                              </li><li class="stmenu">
+                                <div class="nav01"><a href="/a/yanfanenli/gongchengzhongxin/" class="xialaguang" title="合作伙伴"><span> 合作伙伴 </span></a></div>
+                                <ul class="children clearfixmenu pngFix">
+                                  
+                                  <li><a href="/a/yanfanenli/gongchengzhongxin/" title="合作伙伴"><span>合作伙伴</span></a></li>
+                                  
+                                </ul>
+                              </li><li class="stmenu">
+                                <div class="nav01"><a href="/a/jiaruwomen/" class="xialaguang" title="加入东天红"><span> 加入东天红 </span></a></div>
+                                <ul class="children clearfixmenu pngFix">
+                                  
+                                  <li><a href="/a/jiaruwomen/rencaizhaopin/" title="人才招聘"><span>人才招聘</span></a></li>
+                                  
+                                </ul>
+                              </li><li class="stmenu">
+                                <div class="nav01"><a href="/a/lianxiwomen/" class="xialaguang" title="联系我们"><span> 联系我们 </span></a></div>
+                                <ul class="children clearfixmenu pngFix">
+                                  
+                                  <li><a href="/a/lianxiwomen/lianxifangshi/" title="联系方式"><span>联系方式</span></a></li>
+                                  
+                                </ul>
+                              </li> 
+                              
+                              <!---<li class="overlay"></li>-->
+                            </ul>
+                            <script type="text/javascript">
+$('#nav-menu .menu > li').hover(function() {
+$(this).find('.children').animate({ opacity:'show', height:'show' },200);
+$(this).find('.xialaguang').addClass('navhover');
+}, function() {
+$('.children').stop(true,true).hide();
+$('.xialaguang').removeClass('navhover');
+}
+).slice(-1,-3).find('.children').addClass('sleft');
+</script> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END 页脚包含 --> 
+                    <!--导航代码结束--> 
+                    
+                  </div>
+                </div>
+                <script type="text/javascript">
+$('#nav-menu .menu > li').hover(function() {
+$(this).find('.children').animate({ opacity:'show', height:'show' },200);
+$(this).find('.xialaguang').addClass('navhover');
+}, function() {
+$('.children').stop(true,true).hide();
+$('.xialaguang').removeClass('navhover');
+}
+).slice(-1,-3).find('.children').addClass('sleft');
+</script> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END 页脚包含 --> 
+        <!--导航代码结束--> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <div class="main_visual">
+    <div class="flicking_con">
+      <div class="flicking_inner"> <a >1</a> <a >2</a> </div>
+    </div>
+    <div class="main_image">
+      <ul>
+        <li><span class="img_1" style="background:url(/skin/images/dth-banner1.jpg) no-repeat top;"></span></li>
+        <li><span class="img_2" style="background:url(/skin/images/dth-banner2.jpg) no-repeat top;"></span></li>
+        <li><span class="img_2" style="background:url(/skin/images/dth-banner3.jpg) no-repeat top;"></span></li>
+      </ul>
+      <a href="javascript:;" id="btn_prev" title="向左"></a> <a href="javascript:;" id="btn_next"  title="向右"></a> </div>
+  </div>
+    <!-- Login block -->
+    <!-- <div class="login" style="position: absolute;left: 80%;top: 30%">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <h6><i class="icon-user"></i>登录页面</h6>
+            </div>
+        </div>
+        <div class="well">
+            <form class="row-fluid" id="frm-login">
+                <div class="control-group">
+                    <label class="control-label">用户名:</label>
+                    <div class="controls"><input class="span12 validate[required]" name="username" placeholder="请输入用户名" value="" type="text"></div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">密码:</label>
+                    <div class="controls"><input class="span12 validate[required]" name="password" placeholder="请输入密码" value="" type="password"></div>
+                </div>
+
+                <div class="login-btn"><input value="登    录" class="btn btn-danger btn-block" id="btn-login" type="button"></div>
+            </form>
+        </div>
+    </div> -->
+    <!-- /login block -->
+	<script type="text/javascript">
+	$(function(){
+
+		$("input[name='username']").focus();
+
+		$("#password").keypress(function(e){
+			if (e.which == 13) {
+				$("#btn-login").click();
+			}
+		})
+
+		$("#btn-login").click(function(e){
+			e.preventDefault();
+			$.post("http://che.z2a.com.cn/api/passport/login", $("#frm-login").serialize(),function(result){
+				console.log(result);
+				if(result.code == 200){
+					window.location.href = 'http://che.z2a.com.cn/admin/index';
+				}else{
+					$("input[name=username]").focus();
+					$.jGrowl('登录失败，请检查账号和密码！', { sticky: false, theme: 'growl-error', header: '错误!',left:1000 });
+				}
+			},'json')
+		})
+	})
+	</script>    	
+</div>
+<div class="content" style="display: none">
+  <div class="a1"><img src="/skin/images/a1.jpg" width="95" height="36" alt="关于我们" /></div>
+  <div class="a2"> 东天红-供应链管理云平台由武汉东天红数字科技有限公司创立，总部位于上海。管理团队由来自汽车、金融、互联网等行业的跨界专业人士组成，具有丰富的互联网金融行业管理和风控经验。东天红-供应链管理云平台致力于二手车领域各项金融服务，以专业的产品...</div>
+  <div class="a3"><img src="/skin/images/a3.jpg" width="518" height="33" alt="英文"/></div>
+  <div class="a4">
+    <div class="a4_aa">
+      <div class="ih-item square colored effect15 bottom_to_top"> <a href="/a/guanyuwomen/qiyejianjie/" title="公司介绍">
+        <div class="img">
+          <div class="imer"><img src="/skin/images/20150812124106-669338592.jpg" width="185" height="117" alt="公司介绍" /></div>
+          <div class="bt">公司介绍</div>
+        </div>
+        <div class="info">
+          <div class="imer"><img src="/skin/images/20150812124106-669338592.jpg" width="185" height="117" alt="公司介绍" /></div>
+          <div class="bta">公司介绍</div>
+        </div>
+        </a> </div>
+    </div>
+    <div class="a4_ab">
+      <div class="ih-item square colored effect15 bottom_to_top"> <a href="/a/guanyuwomen/zuzhijiegou/" title="组织结构">
+        <div class="img">
+          <div class="imer"><img src="/skin/images/20150812150015-83291752822697168.jpg" width="185" height="117" alt="组织结构" /></div>
+          <div class="bt">组织结构</div>
+        </div>
+        <div class="info">
+          <div class="imer"><img src="/skin/images/20150812150015-83291752822697168.jpg" width="185" height="117" alt="组织结构" /></div>
+          <div class="bta">组织结构</div>
+        </div>
+        </a> </div>
+    </div>
+    <div class="a4_ac">
+      <div class="ih-item square colored effect15 bottom_to_top"> <a href="/a/guanyuwomen/qiyewenhua/" title="企业文化">
+        <div class="img">
+          <div class="imer"><img src="/skin/images/20150812150022-31539172353222968.jpg" width="185" height="117" alt="企业文化" /></div>
+          <div class="bt">企业文化</div>
+        </div>
+        <div class="info">
+          <div class="imer"><img src="/skin/images/20150812150022-31539172353222968.jpg" width="185" height="117" alt="企业文化" /></div>
+          <div class="bta">企业文化</div>
+        </div>
+        </a> </div>
+    </div>
+    <div class="a4_ad">
+      <div class="ih-item square colored effect15 bottom_to_top"><a href="/a/guanyuwomen/zizhirongyu/" title="资质荣誉">
+        <div class="img">
+          <div class="imer"><img src="/skin/images/20150812150116-94544511893764144.jpg" width="185" height="117" alt="资质荣誉" /></div>
+          <div class="bt">资质荣誉</div>
+        </div>
+        <div class="info">
+          <div class="imer"><img src="/skin/images/20150812150116-94544511893764144.jpg" width="185" height="117" alt="资质荣誉" /></div>
+          <div class="bta">资质荣誉</div>
+        </div>
+        </a></div>
+    </div>
+  </div>
+</div>
+<div class="hes" style="display: none">
+  <div class="hes_top"><img src="/skin/images/cpfu.png" width="120" height="36" alt="产品与服务" /></div>
+  <div class="hes_bt">
+    <div class="hes_bt1">
+      <div class="ih-item square effect13 left_to_right"> <a href="/a/chanpinyufuwu/yuancailiao/" title="产品起源">
+        <div class="img"><img src="/skin/images/20150812150649-25481599150225520.jpg" alt="产品起源"></div>
+        <div class="info"> </div>
+        </a> </div>
+      <div class="hes_bt1_bt">
+        <div class="hes_bt1_bt_ico"><img src="/skin/images/logoa.jpg" width="55" height="40" alt="" /></div>
+        <div class="hes_bt1_bt_ico1">
+          <h4>原材料</h4>
+          <p>创新、诚信、务实、高...</p>
+        </div>
+      </div>
+    </div>
+    <div class="hes_bt2">
+      <div class="ih-item square effect13 left_to_right"><a href="/a/chanpinyufuwu/lingbujian/" title="产品优势">
+        <div class="img"><img src="/skin/images/20150812151615-39104547910392288.jpg" alt="产品优势"></div>
+        <div class="info"> </div>
+        </a></div>
+      <div class="hes_bt1_bt">
+        <div class="hes_bt1_bt_ico"><img src="/skin/images/logoa.jpg" width="55" height="40" alt="" /></div>
+        <div class="hes_bt1_bt_ico1">
+          <h4>零部件</h4>
+          <p>创新、诚信、务实、高...</p>
+        </div>
+      </div>
+    </div>
+    <div class="hes_bt3">
+      <div class="ih-item square effect13 left_to_right"><a href="/a/chanpinyufuwu/fuwu/" title="车商金融服务">
+        <div class="img"><img src="/skin/images/20150818134311-62295312620699408.jpg" alt="车商金融服务"></div>
+        <div class="info"> </div>
+        </a></div>
+      <div class="hes_bt1_bt">
+        <div class="hes_bt1_bt_ico"><img src="/skin/images/logoa.jpg" width="55" height="40" alt="" /></div>
+        <div class="hes_bt1_bt_ico1">
+          <h4>服务</h4>
+          <p>创新、诚信、务实、高...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="huise" style="display: none">
+  <div class="huise_top huise_top_new"><a href="/a/yanfanenli/gongchengzhongxin/" title="fff"><img src="/skin/images/yfd.png" alt="合作伙伴" width="95" height="36" /></a></div>
+  <div class="huise_bt">
+    <div class="huise_bt_1">
+      <div class="huise_top"><a href="/a/yanfanenli/gongchengzhongxin/" title="合作伙伴"><img src="/skin/images/20150819181154-89256216539070016.jpg" alt="合作伙伴"  width="238" height="206" /></a></div>
+      <div class="huise_bt_a_cha">工程中心</div>
+      <div class="huise_bt_a_bt">公司与沈阳工业大学联合建立了工程中心，作为公司的技术创新平台...</div>
+    </div>
+    <div class="huise_bt_2">
+      <div class="huise_top"><a href="/a/yanfanenli/fenxijiancezhongxin/list_15_1.html" title="分析检测中心"><img src="/skin/images/20150819181220-64561999961733816.jpg" alt="分析检测中心"  width="238" height="206" /></a></div>
+      <div class="huise_bt_a_cha">分析检测中心</div>
+      <div class="huise_bt_a_bt">公司依托股东公司建立分析测试中心。分析检测中心拥有总价值达千...</div>
+    </div>
+    <div class="huise_bt_3">
+      <div class="huise_top"><a href="/a/yanfanenli/yanfatuandui/" title="研发团队"><img src="/skin/images/20150819181232-72103282529860736.jpg" alt="研发团队"  width="238" height="206" /></a></div>
+      <div class="huise_bt_a_cha">研发团队</div>
+      <div class="huise_bt_a_bt">研发队伍由专家团队及项目管理团队组成。</div>
+    </div>
+    <div class="huise_bt_4">
+      <div class="huise_top"><a href="/a/yanfanenli/yanfachengguo/" title="研发成果"><img src="/skin/images/20150819181245-40961809316650032.jpg" alt="研发成果"  width="238" height="206" /></a></div>
+      <div class="huise_bt_a_cha">研发成果</div>
+      <div class="huise_bt_a_bt">（1）转向架低成本钛合金锻件的开发；（2）机车制动盘专用钛合...</div>
+    </div>
+  </div>
+</div>
+<div class="synews" style="display: none">
+  <div class="synews_tit"><img src="/skin/images/nnsa.jpg" alt="新闻中心" width="96" height="36" /></div>
+  <div class="synews_bt">
+    <div id="container">
+      <div id="example">
+        <div id="slides">
+          <div class="slides_container" >
+            <div class="slide" style="width:110%;">
+              <div style="overflow:hidden;">
+                <ul>
+                  <li>
+                    <h4>2015-12-17</h4>
+                    <p><a href="/a/chanpinyufuwu/fuwu/40.html" title="服务">服务...</a></p>
+                    <h6>　　针对二手车经销商提供一揽子金融产品解决方案，服务客户，加快销售，提升车...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/fuwu/40.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/39.html" title="制动盘用钛合金螺栓">制动盘用钛合金螺栓...</a></p>
+                    <h6>　　M121.75 M523 综合性能优异，延长使用寿命，提升装配可靠性。...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/39.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/38.html" title="钛合金轴箱">钛合金轴箱...</a></p>
+                    <h6>　　该产品采用本公司自主研发的钛合金铸造成型。将明显改善机车的动力学性能，...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/38.html" title="DETAILS"></a></div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="slide" style="width:110%;">
+              <div style="overflow:hidden;">
+                <ul>
+                  <li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/36.html" title="钛合金连接杆">钛合金连接杆...</a></p>
+                    <h6>　　采用自主研发的低成本、高强度的钛合金加工制作。...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/36.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/35.html" title="钛合金弹簧">钛合金弹簧...</a></p>
+                    <h6>　　该产品可应用于轨道交通车辆。重量轻，耐腐蚀；阻尼性好； 绝缘。工作温度...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/35.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/34.html" title="钛合金传动销">钛合金传动销...</a></p>
+                    <h6>　　采用自主研发的低成本、高强度的钛合金加工制作。...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/34.html" title="DETAILS"></a></div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="slide" style="width:110%;">
+              <div style="overflow:hidden;">
+                <ul>
+                  <li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/35.html" title="钛合金弹簧">钛合金弹簧...</a></p>
+                    <h6>　　该产品可应用于轨道交通车辆。重量轻，耐腐蚀；阻尼性好； 绝缘。工作温度...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/35.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/34.html" title="钛合金传动销">钛合金传动销...</a></p>
+                    <h6>　　采用自主研发的低成本、高强度的钛合金加工制作。...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/34.html" title="DETAILS"></a></div>
+                  </li>
+<li>
+                    <h4>2015-10-16</h4>
+                    <p><a href="/a/chanpinyufuwu/lingbujian/33.html" title="齿轮箱用钛合金螺栓">齿轮箱用钛合金螺栓...</a></p>
+                    <h6>　　综合性能优异，延长使用寿命，提升装配可靠性。...</h6>
+                    <div class="a1"><a href="/a/chanpinyufuwu/lingbujian/33.html" title="DETAILS"></a></div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="prev"><img src="/skin/images/ja1.jpg" width="26" height="46" /></a> <a href="javascript:void(0);" class="next"><img src="/skin/images/ja2.jpg" width="26" height="46" /></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="ccac" style="display: none">
+  <div class="ccacx_top"><img src="/skin/images/lxw.png" width="95" height="36" alt="联系我们"/></div>
+  <div class="ccacx_topa"> <img src="/skin/images/20150812050836-667183452.png" style="width: 515px; height: 34px;" /></div>
+  <div class="ccacx_topb"> <img src="/skin/images/20150812050847-1444039584.png" style="width: 229px; height: 28px;" /></div>
+  <div class="ccacx_topc"><a href="/a/lianxiwomen/" title="联系我们"><img src="/skin/images/xxf.png" width="96" height="28" alt="联系我们" /></a></div>
+</div>
+<script src="/skin/js/slides.min.jquery.js"></script> 
+<script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 3000,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					
+				}
+			});
+		});
+</script> 
+<div class="foot">
+  <div class="foot_top">
+    <ul>
+      <li>
+        <h6><a href="/a/guanyuwomen/" title="关于东天红">关于东天红</a></h6>
+        <p>  <a href="/a/guanyuwomen/qiyejianjie/" title="公司介绍">公司介绍</a>  <a href="/a/guanyuwomen/qiyewenhua/" title="企业文化">企业文化</a>  </p>
+      </li><li>
+        <h6><a href="/a/chanpinyufuwu/" title="产品介绍">产品介绍</a></h6>
+        <p>  <a href="/a/chanpinyufuwu/yuancailiao/" title="产品起源">产品起源</a>  <a href="/a/chanpinyufuwu/lingbujian/" title="产品优势">产品优势</a>    </p>
+      </li><li>
+        <h6><a href="/a/yanfanenli/gongchengzhongxin/" title="合作伙伴">合作伙伴</a></h6>
+        <p>  <a href="/a/yanfanenli/gongchengzhongxin/" title="合作伙伴">合作伙伴</a>  </p>
+      </li><li>
+        <h6><a href="/a/jiaruwomen/" title="加入东天红">加入东天红</a></h6>
+        <p>  <a href="/a/jiaruwomen/rencaizhaopin/" title="人才招聘">人才招聘</a>  </p>
+      </li><li>
+        <h6><a href="/a/lianxiwomen/" title="联系我们">联系我们</a></h6>
+        <p>  <a href="/a/lianxiwomen/lianxifangshi/" title="联系方式">联系方式</a>  </p>
+      </li>
+    </ul>
+  </div>
+  <div class="foot_bt">
+    <p>武汉东天红数字科技有限公司　</a>　</p>
+    <p>电话：027-51661050</p>
+    <p>技术支持：<a href="http://www.z2a.com.cn/" target="_blank" title="武汉东天红数字科技有限公司">武汉东天红数字科技有限公司</a></p>
+  </div>
+</div>
+
+
+<!--<script type="text/javascript" src="http://s.z2a.uxingke.com/admin/js/plugins/ui/jquery.jgrowl.js"></script>
+<a href="http://www.miitbeian.gov.cn/" title="沪ICP备14012592号-2" target="_blank">-->
+	
+</body>
+</html>
