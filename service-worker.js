@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.845493bc641c1483d063a8decce40de0.js"
+  "/precache-manifest.3387de17d4bcc2167e5b923e08caff25.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "dth-web"});
