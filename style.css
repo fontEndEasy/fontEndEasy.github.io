@@ -1,0 +1,142 @@
+/* AI效率派 - 全站样式 */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --accent: #f59e0b;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius: 14px;
+  --max-w: 1080px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+
+/* 顶部导航 */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 50;
+}
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.logo { font-size: 22px; font-weight: 800; color: var(--text); }
+.logo span { color: var(--primary); }
+.nav-links { display: flex; gap: 26px; list-style: none; }
+.nav-links a { color: var(--text-muted); font-weight: 500; }
+.nav-links a:hover { color: var(--primary); text-decoration: none; }
+
+/* 英雄区 */
+.hero {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+  padding: 72px 0 64px;
+  text-align: center;
+}
+.hero h1 { font-size: 40px; font-weight: 800; margin-bottom: 18px; letter-spacing: -1px; }
+.hero p { color: var(--text-muted); font-size: 18px; max-width: 640px; margin: 0 auto 30px; }
+.btn {
+  display: inline-block; background: var(--primary); color: #fff;
+  padding: 13px 34px; border-radius: 999px; font-weight: 600; font-size: 16px;
+  transition: background .2s;
+}
+.btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+/* 通用区块 */
+.section { padding: 56px 0; }
+.section-title { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+.section-sub { color: var(--text-muted); margin-bottom: 32px; }
+
+/* 卡片网格 */
+.grid {
+  display: grid; gap: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+  display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(37,99,235,.10); }
+.card-thumb {
+  height: 160px; display: flex; align-items: center; justify-content: center;
+  font-size: 52px;
+}
+.card-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+.card-tag {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  color: var(--primary); background: #eff6ff; border-radius: 999px;
+  padding: 3px 12px; margin-bottom: 12px; align-self: flex-start;
+}
+.card h3 { font-size: 19px; margin-bottom: 10px; line-height: 1.5; }
+.card h3 a { color: var(--text); }
+.card h3 a:hover { color: var(--primary); text-decoration: none; }
+.card p { color: var(--text-muted); font-size: 15px; flex: 1; }
+.card-meta { margin-top: 16px; font-size: 13px; color: #94a3b8; }
+
+/* 文章页 */
+.article-header { padding: 48px 0 8px; }
+.article-header .card-tag { font-size: 13px; }
+.article-header h1 { font-size: 34px; line-height: 1.4; margin: 10px 0 14px; }
+.article-meta { color: #94a3b8; font-size: 14px; margin-bottom: 8px; }
+.article-body {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 40px 44px; margin: 24px 0 40px;
+}
+.article-body h2 { font-size: 24px; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid var(--primary); }
+.article-body h3 { font-size: 19px; margin: 26px 0 10px; }
+.article-body p { margin-bottom: 16px; color: #334155; }
+.article-body ul, .article-body ol { margin: 0 0 16px 24px; color: #334155; }
+.article-body li { margin-bottom: 8px; }
+.article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; }
+.article-body th { background: #f1f5f9; text-align: left; }
+.article-body th, .article-body td { border: 1px solid var(--border); padding: 10px 14px; }
+.tip {
+  background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px;
+  padding: 14px 18px; margin: 18px 0; font-size: 15px; color: #92400e;
+}
+
+/* 广告位（接入 AdSense 后自动展示） */
+.ad-slot {
+  margin: 28px 0; min-height: 90px;
+  background: repeating-linear-gradient(45deg, #f8fafc, #f8fafc 12px, #f1f5f9 12px, #f1f5f9 24px);
+  border: 1px dashed #cbd5e1; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: #94a3b8; font-size: 13px; text-align: center; padding: 10px;
+}
+
+/* 页脚 */
+.site-footer {
+  background: #0f172a; color: #cbd5e1;
+  padding: 48px 0 28px; margin-top: 40px; font-size: 14px;
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; margin-bottom: 32px; }
+.site-footer h4 { color: #fff; margin-bottom: 14px; font-size: 15px; }
+.site-footer ul { list-style: none; }
+.site-footer li { margin-bottom: 9px; }
+.site-footer a { color: #94a3b8; }
+.site-footer a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid #1e293b; padding-top: 20px; text-align: center; color: #64748b; font-size: 13px; }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: 28px; }
+  .article-body { padding: 26px 20px; }
+  .article-header h1 { font-size: 25px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .nav-links { gap: 14px; font-size: 14px; }
+}
